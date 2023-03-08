@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box; } 
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=Reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=Reset]:hover {
+  background-color: #a05945;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #50676773;
+  padding: 20px;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #ff1908;
+  
+}
+input[type=text]:hover {
+  background-color: #d8bce6;
+}
+</style>
+</head>
+<body>
+
+<h2> GET IN TOUCH </h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">E-Mail</label>
+    <input type="text" id="E-Mail" name="E-Mail" placeholder="Your E-Mail..">
+
+    <label for="lname">Phone Number</label>
+    <input type="text" id="Phone no" name="Phone Number" placeholder="Your Phone Number..">
+
+    <label for="country">State</label>
+    <select id="country" name="country">
+      <option value="jammu">Jammu</option>
+      <option value="KASHMIR">kashmir</option>
+      <option value="Lah">Lah</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit Massage">
+    <input type="reset" value="Reset Massage">
+  </form>
+</div>
+
+</body>
+</html>
